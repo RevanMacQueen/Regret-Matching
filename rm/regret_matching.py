@@ -20,7 +20,6 @@ class RegretMatching():
         self.payoffs = payoffs # payoff matrix for this player
 
         self.history = None # history of stategy profiles. Used to compute regret
-        self.deviation_type = 'external'
         self.num_actions = num_actions
         self.t = 0
         self.cumulative_strategy = np.zeros(num_actions) # average strategy
@@ -78,8 +77,7 @@ class RegretMatching():
                 self.strategy = self.blue_print
 
     def link(self, regrets):
-        if self.deviation_type == 'external':
-            return np.maximum(regrets, np.zeros_like(regrets))
+        return np.maximum(regrets, np.zeros_like(regrets))
 
     def get_regret(self, s):
         regret = np.zeros(self.num_actions)
