@@ -1,6 +1,7 @@
 # Regret-Matching
 An implementation of the [Regret-Matching](https://onlinelibrary.wiley.com/doi/abs/10.1111/1468-0262.00153?casa_token=SlfFATJyWPsAAAAA:Cce3j4Nas--ytJ9DbagxY4x8hUKuFElvL_kiBL_Z_T9Ymv_SAoKMKIK2jajSmxQWs9wFlf9SWyiRrQ) algorithm. 
 
+## Installation
 You may install this repo as a python library by running 
 ```
 pip install .
